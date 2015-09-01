@@ -1,2 +1,0 @@
-Host *
-  IdentityFile ~/.ssh/wordpress_replication

@@ -1,2 +1,0 @@
------BEGIN RSA PRIVATE KEY-----
-{{ wordpress_replication_rsa_private_key }}-----END RSA PRIVATE KEY-----

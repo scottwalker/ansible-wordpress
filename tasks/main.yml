@@ -7,6 +7,5 @@
   apt: name=apache2 state=absent
 
 - include: directory_structure.yml
-- include: ssh.yml
 - include: deploy.yml
 - include: restart.yml

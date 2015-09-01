@@ -18,8 +18,6 @@
 require_once( '{{ wp_pre_config_filename }}' );
 {% endif %}
 
-
-
 // ** MySQL settings - You can get this info from your web host ** //
 /**
  * WordPress Database Table prefix.
@@ -47,10 +45,6 @@ define( 'DB_CHARSET', 'utf8' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', 'utf8_general_ci' );
 
-
-
-
-
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -71,7 +65,6 @@ define( 'LOGGED_IN_SALT',   '{{ logged_in_salt }}' );
 define( 'NONCE_SALT',       '{{ nonce_salt }}' );
 define( 'SECRET_SALT',      '{{ secret_salt }}' );
 
-
 /**
  * Turn off automatic updates since these are managed upstream.
  */
@@ -79,25 +72,15 @@ define( 'SECRET_SALT',      '{{ secret_salt }}' );
 define( 'AUTOMATIC_UPDATER_DISABLED', {{auto_up_disable}} );
 {% endif %}
 
-
 /** Define AUTOMATIC Updates for Components. */
 {% if core_update_level is defined and core_update_level != None %}
 define( 'WP_AUTO_UPDATE_CORE', {{core_update_level}} );
 {% endif %}
 
-
-
-
-
-
 /**#@-*/
 {% if wp_post_config_filename is defined and wp_post_config_filename != None %}
 require_once( '{{ wp_post_config_filename }}' );
 {% endif %}
-
-
-
-
 
 /**************************************************************************************************************************
  FILE AND URL LOCATION CONSTANTS
@@ -118,11 +101,6 @@ define( 'ADMIN_COOKIE_PATH', SITECOOKIEPATH . 'wp-admin' );
 define( 'PLUGINS_COOKIE_PATH', preg_replace( '|https?://[^/]+|i', '', WP_PLUGIN_URL ) );
 ! defined( 'COOKIE_DOMAIN' ) && define( 'COOKIE_DOMAIN', $_SERVER['HTTP_HOST'] );
 
-
-
-
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
-
-
 // EOF

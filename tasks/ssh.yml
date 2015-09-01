@@ -1,6 +1,0 @@
----
-- name: Ensure that user SSH directory exists
-  file:
-    path: "/home/{{ replication_username }}/.ssh"
-    state: directory
-    mode: 0755
